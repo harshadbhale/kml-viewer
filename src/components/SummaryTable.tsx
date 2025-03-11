@@ -31,8 +31,8 @@ const SummaryTable: React.FC<SummaryTableProps> = ({ data }) => {
           <tbody>
             {Object.entries(elementCounts).map(([type, count]) => (
               <tr key={type}>
-                <td>{type}</td>
-                <td>{count}</td>
+                <td>{type as string}</td>
+                <td>{count as number}</td>
               </tr>
             ))}
           </tbody>
